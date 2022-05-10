@@ -1,4 +1,5 @@
 REPORT = QuizX-Y
+
 all: ${REPORT}.pdf
 
 
@@ -9,3 +10,5 @@ ${REPORT}.pdf: ${REPORT}.tex
 
 clean:
 	rm *.aux *.dvi *.log ${REPORT}.pdf
+
+.PHONEY: all clean
