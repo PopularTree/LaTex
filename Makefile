@@ -10,3 +10,7 @@ ${NAME}.pdf: ${NAME}.tex
 
 clean:
 	rm *.aux *.dvi *.log ${NAME}.pdf
+
+re: clean all
+
+.PHONEY: all clean re
