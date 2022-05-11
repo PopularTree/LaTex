@@ -1,0 +1,45 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                  %
+%                report                                            %
+%                                                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt, a4j, dvipdfmx]{jarticle}
+
+\usepackage[textwidth=45zw,lines=40]{geometry} % Text format 指定
+%\usepackage[top=2cm, bottom=2cm, left=1cm, right=1cm]{geometry}
+\usepackage{ascmac}                 % ASCII macro
+\usepackage{amsmath}                % 数式スタイル
+\usepackage{nccmath}                % 数式スタイル
+\usepackage{amssymb}                % 数学記号
+\usepackage{amsthm}                 % 数学・定理・証明スタイル
+\usepackage{multicol}               % 部分的段組み
+\usepackage{tabularx}               % 表スタイル
+\usepackage{graphics}               % 図挿入スタイル
+\usepackage{graphicx}               % 図挿入スタイル
+\usepackage{cases}                  % 場合分け
+\usepackage[usenames]{color}        % カラーの文書
+\usepackage[dvipsnames]{xcolor}     % カラーの文書
+\usepackage{extarrows}              % 長い矢印
+\usepackage{bm}                     % \bm Bold Math for Vector and Matrix
+\usepackage{fancybox}               % 色々な箱
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\fancypagestyle{mypagestyle}{%
+\lhead{}%ヘッダ左を空に
+\rhead{}%ヘッダ右を空に
+\cfoot{\thepage/\pageref{LastPage}}%フッタ中央に"今のページ数/総ページ数"を設定
+\renewcommand{\headrulewidth}{0.0pt}%ヘッダの線を消す
+}
+\pagestyle{mypagestyle}
+\input{lstlisting.tex}
+
+\title{}
+\author{東京都市大学　情報工学部　情報科学科　x年　2021057　田丸昌樹}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{mypagestyle}
+
+\end{document}

@@ -1,14 +1,12 @@
-REPORT = QuizX-Y
+NAME = report
 
-all: ${REPORT}.pdf
+all: ${NAME}.pdf
 
 
-${REPORT}.pdf: ${REPORT}.tex 
-	platex ${REPORT}.tex
-	platex ${REPORT}.tex
-	dvipdfmx ${REPORT}.dvi
+${NAME}.pdf: ${NAME}.tex 
+	platex ${NAME}.tex
+	platex ${NAME}.tex
+	dvipdfmx ${NAME}.dvi
 
 clean:
-	rm *.aux *.dvi *.log ${REPORT}.pdf
-
-.PHONEY: all clean
+	rm *.aux *.dvi *.log ${NAME}.pdf
