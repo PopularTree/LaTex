@@ -13,4 +13,8 @@ clean:
 
 re: clean all
 
-.PHONEY: all clean re
+first:
+	rm -rf .git
+	rm README.md
+
+.PHONEY: all clean re first
